@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@source "../views";
+@source "../js";
+
+@theme {
+    --font-sans: "Hind Siliguri", ui-sans-serif, system-ui, sans-serif;
+    --font-display: "Noto Serif Bengali", "Hind Siliguri", serif;
+
+    /* লোগোর রঙ: টিল ও সোনালি */
+    --color-brand-50: #f3f7f7;
+    --color-brand-100: #e3eeee;
+    --color-brand-200: #c5dcdd;
+    --color-brand-600: #1f6372;
+    --color-brand-700: #1a5563;
+    --color-brand-800: #154a58;
+    --color-brand-900: #0e3541;
+
+    --color-gold-100: #f6ecd8;
+    --color-gold-400: #d9a548;
+    --color-gold-500: #b5832c;
+    --color-gold-600: #9a6f22;
+}
+
+@layer base {
+    html {
+        scroll-behavior: smooth;
+    }
+    body {
+        @apply bg-brand-50 font-sans text-[17px] leading-relaxed text-slate-800 antialiased;
+    }
+    h1, h2, h3 {
+        @apply font-display text-balance leading-snug;
+    }
+}
